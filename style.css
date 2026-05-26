@@ -1,0 +1,78 @@
+:root {
+  --cream: rgba(245, 239, 224, 1);
+  --dark-brown: rgba(44, 24, 16, 1);
+  --medium-brown: rgba(107, 58, 42, 1);
+  --warm-brown: rgba(160, 82, 45, 1);
+  --gold: rgba(200, 151, 58, 1);
+  --light-gold: rgba(232, 200, 120, 1);
+  --text-dark: rgba(26, 15, 10, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background: rgba(245, 239, 224, 0.92);
+  box-shadow: 0 2px 20px rgba(44, 24, 16, 0.1);
+  transition: var(--transition);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+}
+.nav-logo-text {
+  font-size: 35px;
+  color: var(--gold);
+  padding: 5px;
+}
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 20px;
+  font-size: 20px;
+}
+.nav-links li a {
+  color: var(--gold);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+}
