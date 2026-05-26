@@ -1,11 +1,11 @@
 :root {
-  --cream: rgba(245, 239, 224, 1);
-  --dark-brown: rgba(44, 24, 16, 1);
-  --medium-brown: rgba(107, 58, 42, 1);
-  --warm-brown: rgba(160, 82, 45, 1);
-  --gold: rgba(200, 151, 58, 1);
-  --light-gold: rgba(232, 200, 120, 1);
-  --text-dark: rgba(26, 15, 10, 1);
+  --cream: rgb(245, 239, 224);
+  --dark-brown: rgb(44, 24, 16);
+  --medium-brown: rgb(107, 58, 42);
+  --warm-brown: rgb(160, 82, 45);
+  --gold: rgb(200, 151, 58);
+  --light-gold: rgb(232, 200, 120);
+  --text-dark: rgb(26, 15, 10);
 }
 
 * {
@@ -42,7 +42,6 @@ ul {
   padding: 1rem 10%;
   background: rgba(245, 239, 224, 0.8);
   box-shadow: 0 2px 20px rgba(44, 24, 16, 0.1);
-  transition: var(--transition);
 }
 
 .nav-logo {
@@ -66,8 +65,14 @@ ul {
   padding: 20px;
   font-size: 20px;
 }
+
 .nav-links li a {
   color: var(--gold);
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--light-gold);
 }
 
 .main-img {
@@ -75,6 +80,7 @@ ul {
   width: 100%;
   height: 100%;
   filter: brightness(0.35);
+  z-index: -2;
 }
 
 .hero {
@@ -112,4 +118,59 @@ ul {
 
 .hero-cta:hover {
   background: var(--light-gold);
+}
+.home-aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 120px;
+}
+
+.home-aboutUs-img-box {
+  flex: 1 1 450px;
+  position: relative;
+}
+
+.home-aboutUs-img-box img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.home-aboutUs-text-box {
+  flex: 1 1 500px;
+  color: var(--text-dark);
+}
+
+.home-aboutUs-text-box h4 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.home-aboutUs-text-box h4 span {
+  color: var(--light-gold);
+  font-size: 25px;
+  letter-spacing: 0;
+}
+
+.home-aboutUs-text-box p {
+  font-size: 18px;
+  line-height: 40px;
+  color: var(--dark-brown);
+  margin-bottom: 33px;
+}
+
+.home-aboutUs-text-box hr {
+  width: 200px;
+  height: 3px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--gold), var(--light-gold));
 }
