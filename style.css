@@ -40,7 +40,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 10%;
-  background: rgba(245, 239, 224, 0.92);
+  background: rgba(245, 239, 224, 0.8);
   box-shadow: 0 2px 20px rgba(44, 24, 16, 0.1);
   transition: var(--transition);
 }
@@ -70,9 +70,46 @@ ul {
   color: var(--gold);
 }
 
+.main-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.35);
+}
+
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 100px 10%;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.hero-cta {
+  padding: 15px 30px;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.hero-cta:hover {
+  background: var(--light-gold);
 }
