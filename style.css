@@ -16,7 +16,7 @@
 
 body {
   font-family: "Georgia", serif;
-  background-color: var(--cream);
+  background: linear-gradient(var(--cream), var(--light-gold));
   color: var(--text-dark);
   line-height: 1.7;
   overflow-x: hidden;
@@ -120,7 +120,8 @@ ul {
 .hero-cta:hover {
   background: var(--light-gold);
 }
-.home-aboutUs {
+
+#section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,15 +174,10 @@ ul {
   height: 3px;
   border: none;
   border-radius: 999px;
-  background: linear-gradient(to right, var(--gold), var(--light-gold));
+  background: linear-gradient(to right, var(--light-gold), var(--cream));
 }
 
 .categories {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  padding: 120px;
   background-color: rgb(245, 232, 201);
 }
 
@@ -228,4 +224,73 @@ ul {
   height: 650px;
   object-fit: cover;
   border-radius: 24px;
+}
+
+.blogs {
+  background: var(--cream);
+  flex-direction: column;
+}
+
+.blogs-text-box {
+  margin-bottom: 60px;
+}
+
+.blogs-text-box::after {
+  content: "Stay Updated with\AOur Articles";
+  white-space: pre-line;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.blogs-cards {
+  display: flex;
+  gap: 25px;
+}
+
+.cards {
+  background: white;
+  border-radius: 18px;
+  transition: 0.3s ease;
+  width: 344px;
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+}
+
+.cards img {
+  margin: 10px;
+  border-radius: 14px;
+}
+.card-container {
+  padding: 0 22px 22px;
+}
+
+.card-container h4 {
+  font-size: 26px;
+  line-height: 1.3;
+  color: black;
+
+  margin-bottom: 15px;
+}
+
+.card-container p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#cardBtn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: var(--cream);
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+#cardBtn:hover {
+  background: var(--gold);
+  color: white;
 }
