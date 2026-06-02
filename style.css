@@ -473,8 +473,8 @@ ul {
 }
 
 .social-icons a:hover {
-  border-color: #b08d57;
-  color: #b08d57;
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 .footer-bottom {
@@ -488,4 +488,68 @@ ul {
 .footer-bottom p {
   font-size: 13px;
   color: var(--medium-brown);
+}
+
+.register-section {
+  min-height: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: linear-gradient(var(--cream), var(--light-gold));
+}
+
+.register-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-form fieldset {
+  border: 2px solid var(--gold);
+  border-radius: 15px;
+  padding: 40px;
+  background: white;
+}
+
+.register-form legend {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-dark);
+  padding: 0 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 14px;
+  border: 1px solid rgb(235, 233, 233);
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: var(--gold);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-btn:hover {
+  background: var(--medium-brown);
 }
