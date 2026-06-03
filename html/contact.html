@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GrandNova Hotels</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo-icon-1.png" />
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -27,6 +28,45 @@
         <li><a href="signIn.html" class="nav-cta">Sign In</a></li>
       </ul>
     </nav>
+    <main>
+      <section class="contacts">
+        <div class="contacts-info">
+          <h1>Contact Us</h1>
+
+          <p>Have questions or need assistance? We'd love to hear from you.</p>
+
+          <div class="contact-details">
+            <p><strong>Phone:</strong> +1 234-567-890</p>
+            <p><strong>Email:</strong> grandnova@gmail.com</p>
+            <p><strong>Location:</strong> Tbilisi, Georgia</p>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <fieldset>
+            <legend>Send Us a Message</legend>
+
+            <label for="name">Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name" />
+
+            <label for="email">Email Address</label>
+            <input type="email" name="email" placeholder="example@email.com" />
+
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Message subject" />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              placeholder="Write your message here..."
+              rows="6"
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
     <footer>
       <section class="footer-above">
         <div class="footer-img">
