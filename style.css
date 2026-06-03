@@ -685,3 +685,117 @@ ul {
 .contact-form button:hover {
   background: var(--medium-brown);
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  #section {
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 40px;
+  }
+
+  .blogs-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-rows {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  #section {
+    padding: 60px 20px;
+  }
+
+  .home-aboutUs-img-box img {
+    height: 400px;
+  }
+
+  .category-text-box h2 {
+    font-size: 35px;
+  }
+
+  .rooms {
+    margin: 120px auto;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-rows {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .nav-logo-text {
+    font-size: 25px;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .card-container h4 {
+    font-size: 18px;
+  }
+
+  .footer-above h4 {
+    font-size: 22px;
+  }
+}
