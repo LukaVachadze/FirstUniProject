@@ -1,5 +1,7 @@
-const btn = document.querySelector(".register-btn");
+const form = document.querySelector(".register-form");
 
-btn.addEventListener("click", function () {
-  alert("you have been registered");
-});
+if (form) {
+  form.addEventListener("submit", function () {
+    alert("You have been registered");
+  });
+}
